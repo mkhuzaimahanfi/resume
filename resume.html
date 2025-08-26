@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Khuzaima Hanfi – SQA Automation Engineer</title>
+  <meta name="description" content="Resume webpage for Muhammad Khuzaima Hanfi – SQA Automation Engineer with experience in API automation, ISO 20022 (RTGS, P2P, P2M, Bulk), and client assignment at EthSwitch (Ethiopia)."/>
+  <meta property="og:title" content="Muhammad Khuzaima Hanfi – SQA Automation Engineer"/>
+  <meta property="og:description" content="API & mobile automation • ISO 20022: RTGS, P2P, P2M, Bulk • EthSwitch (Ethiopia) client assignment"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --card: 255 255 255; --ink: 15 23 42; --muted: 100 116 139; }
+    .dark:root { --card: 15 23 42; --ink: 241 245 249; --muted: 148 163 184; }
+    @media print {
+      .no-print { display: none !important; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: normal; }
+      body { color: #000; }
+    }
+  </style>
+  <script>
+    // Improved theme toggle logic and global scope
+    function initTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      initTheme();
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // Ensure theme button works for all browsers
+      var themeBtn = document.querySelector('button[onclick="toggleTheme()"]');
+      if (themeBtn) {
+        themeBtn.onclick = toggleTheme;
+      }
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Khuzaima Hanfi",
+    "jobTitle": "SQA Automation Engineer",
+    "email": "mailto:muhammadkhuzaimahanfi@gmail.com",
+    "telephone": "+92 303 0213159",
+    "url": "",
+    "sameAs": ["https://www.linkedin.com/in/khuzaima-hanfi-3584b3220"],
+    "address": {"@type":"PostalAddress","addressLocality":"Addis Ababa","addressCountry":"ET"}
+  }
+  </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 antialiased">
+  <!-- Top Bar -->
+  <div class="no-print sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-slate-900/50 border-b border-slate-200/70 dark:border-slate-700">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center gap-2 justify-between">
+      <div class="text-sm sm:text-base font-medium">Professional Resume</div>
+      <div class="flex items-center gap-2">
+        <a href="../Master Folder/photos/Muhammad_Khuzaima_CV.pdf" class="inline-flex items-center gap-2 rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition" download>
+          <!-- Download Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M7.5 12 12 16.5m0 0 4.5-4.5M12 16.5V3"/></svg>
+          <span>Download PDF</span>
+        </a>
+        <button onclick="window.print()" class="inline-flex items-center gap-2 rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <!-- Print Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-3a2 2 0 012-2h16a2 2 0 012 2v3a2 2 0 01-2 2h-2M6 14h12M8 22h8v-6H8v6z"/></svg>
+          <span>Print</span>
+        </button>
+        <button onclick="toggleTheme()" class="inline-flex items-center gap-2 rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <!-- Theme Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718 0 0112 21.75c-5.385 0-9.75-4.365-9.75-9.75 0-4.28 2.72-7.93 6.528-9.29.548-.207 1.11.272.987.846A7.5 7.5 0 0012 19.5a7.5 7.5 0 007.194-10.235c-.223-.57.44-1.048.987-.84a9.718 9.718 0 011.571 6.577z"/></svg>
+          <span>Theme</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <main class="max-w-5xl mx-auto px-2 sm:px-4 py-4 sm:py-12">
+    <!-- Header Card -->
+    <section class="bg-white/90 dark:bg-slate-800/70 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-4 sm:p-8">
+      <div class="flex flex-col sm:flex-row items-center mb-6 gap-4 sm:gap-8">
+        <img src="https://raw.githubusercontent.com/mkhuzaimahanfi/resume/main/headshotmaster_image_1753691253443.png" 
+     alt="Profile picture" 
+     class="w-7rem h-36 border-4 border-slate-300 object-contain shadow-lg mb-0" 
+     style="border-radius: 0.75rem; background: #fff;" />
+        <div class="flex-1 text-center sm:text-left">
+          <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight">Muhammad Khuzaima Hanfi</h1>
+          <p class="mt-1 text-base sm:text-xl text-slate-600 dark:text-slate-300">SQA Automation Engineer</p>
+          <p class="mt-3 max-w-3xl text-xs sm:text-base text-slate-700 dark:text-slate-300">A competent, Associate with experience
+in process-oriented IT professional experience. Excellent reputation for resolving problems and improving customer satisfaction. Adept in, developing end-to-end lifecycle of software development and testing. Excellent leadership and communication skills with flexibility and ability to quickly ramp up in any given domain or technology. Motivated and dedicated Software Test Engineer.
+</p>
+        </div>
+      </div>
+      <div class="sm:flex sm:items-end sm:justify-between gap-6 text-center sm:text-left">
+        <ul class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 space-y-1">
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 6.75l8.954 5.724a1.5 1.5 0 001.592 0L21.75 6.75M3.75 6.75V18A2.25 2.25 0 006 20.25h12A2.25 2.25 0 0020.25 18V6.75"/></svg>
+            <a class="hover:underline" href="mailto:muhammadkhuzaimahanfi@gmail.com">muhammadkhuzaimahanfi@gmail.com</a></li>
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 4.5l19.5 0M6 3v18m12-18v18M2.25 19.5l19.5 0"/></svg>
+            <a class="hover:underline" href="https://www.linkedin.com/in/khuzaima-hanfi-3584b3220" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 6.75A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25v10.5A2.25 2.25 0 0119.5 19.5h-15A2.25 2.25 0 012.25 17.25V6.75z"/></svg>
+            <span>+92 303 0213159</span></li>
+          <!---<li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657A8 8 0 116.343 5.343 8 8 0 0117.657 16.657z"/></svg>
+            <span>Addis Ababa, Ethiopia (On-site)</span></li>--->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
+      <!-- Left column -->
+      <aside class="md:col-span-1 space-y-8">
+        <!-- Skills -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4">Key Skills</h2>
+          <ul class="grid grid-cols-2 gap-2 text-sm">
+            <li class="flex items-center gap-1">
+              <!-- API Testing Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">API</text></svg>
+              <span>API Testing</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Python Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="6"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">Py</text></svg>
+              <span>Automation (Python)</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Selenium Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">Se</text></svg>
+              <span>Selenium / Appium</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Postman Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">P</text>
+              </svg>
+              <span>Postman</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- JMeter Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">JM</text></svg>
+              <span>JMeter</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Load & Performance Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-purple-500" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="8" rx="4"/><text x="12" y="15" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">L/P</text></svg>
+              <span>Load & Performance</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Functional / Non-functional Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-500" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="8"/><text x="12" y="16" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">F/NF</text></svg>
+              <span>Functional / Non‑functional</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Boundary Value Analysis Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-teal-500" fill="currentColor" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="6"/><text x="12" y="15" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">BVA</text></svg>
+              <span>Boundary Value Analysis</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Defect Analysis Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">DA</text></svg>
+              <span>Defect Analysis</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- Bug Tracking & Reporting Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="8" rx="4"/><text x="12" y="15" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">Bug</text></svg>
+              <span>Bug Tracking & Reporting</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- API Mocking / Simulator Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="8" fill="#fff" font-family="Arial">Mock</text></svg>
+              <span>API Mocking / Simulator</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <!-- SoapUI Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-lime-500" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="8"/><text x="12" y="16" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">SU</text></svg>
+              <span>SoapUI</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4">Education</h2>
+          <div class="space-y-4 text-sm">
+            <div>
+              <p class="font-medium">Bachelors in Computer Science</p>
+              <p class="text-slate-600 dark:text-slate-400">University of Karachi</p>
+              <p class="text-slate-500 dark:text-slate-400">2019 – 2023</p>
+            </div>
+            <div>
+              <p class="font-medium">Intermediate</p>
+              <p class="text-slate-600 dark:text-slate-400">Govt. Degree Science & Commerce College, Gulshan-e-Iqbal</p>
+              <p class="text-slate-500 dark:text-slate-400">2016 – 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4">Tools & Tech</h2>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- Python Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="6"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">Py</text></svg>
+              <span>Python</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- Selenium Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">Se</text></svg>
+              <span>Selenium</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- Appium Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">Ap</text></svg>
+              <span>Appium</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- Postman Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">P</text></svg>
+              <span>Postman</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- JMeter Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-500" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="#fff" font-family="Arial">JM</text></svg>
+              <span>JMeter</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- SoapUI Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-lime-500" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="8"/><text x="12" y="16" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">SU</text></svg>
+              <span>SoapUI</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- Git Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="8" rx="4"/><text x="12" y="15" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">Git</text></svg>
+              <span>Git</span>
+            </span>
+            <span class="flex items-center gap-1 px-2 py-1 rounded-full border">
+              <!-- Docker Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="8" rx="4"/><text x="12" y="15" text-anchor="middle" font-size="9" fill="#fff" font-family="Arial">Dkr</text></svg>
+              <span>Docker</span>
+            </span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right column -->
+      <div class="md:col-span-2 space-y-8">
+        <!-- Experience -->
+        <section class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-6">Experience</h2>
+
+          <article class="mb-8">
+            <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-base sm:text-lg font-semibold">SQA Automation Engineer — Paysys Labs Pvt Ltd</h3>
+              <p class="text-sm text-slate-500">Feb 2024 – Present</p>
+            </header>
+            <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+              <li>Automated complex API testing flows, reducing manual effort and improving test efficiency across multiple services.</li>
+              <li>Designed and implemented a mock API response generation system for reliable, repeatable testing without external dependencies.</li>
+              <li>Built a bank API replication framework in a controlled mock environment to enable seamless integration testing and faster delivery cycles.</li>
+            </ul>
+          </article>
+
+          <article class="mb-8">
+            <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-base sm:text-lg font-semibold">Client Assignment — EthSwitch (National Switch of Ethiopia), Addis Ababa</h3>
+              <p class="text-sm text-slate-500">Mar 2024 – Present</p>
+            </header>
+            <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+              <li>Led/Supported System Integration Testing (SIT) and deployment for <strong>Dashen Bank</strong> within the EthSwitch ecosystem.</li>
+              <li>Hands‑on on ISO 20022 rails: <strong>RTGS</strong>, <strong>P2P</strong>, <strong>P2M</strong>, and <strong>Bulk Payments</strong>; validated end‑to‑end message flows.</li>
+              <li>Collaborated directly with client and vendor teams to validate payment switch integration and ensure successful go‑live.</li>
+              <li>Provided on‑site technical & QA support, bridging Paysys engineering and Ethiopian banking partners; contributed to national switch stability and interoperability.</li>
+            </ul>
+            <p class="mt-3 text-xs text-slate-500">Note: Employed by Paysys Labs; deployed on‑site to EthSwitch.</p>
+          </article>
+
+          <article class="mb-8">
+            <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-base sm:text-lg font-semibold">SQA Engineer (Automation/Manual) — Al Nafi Pvt Ltd</h3>
+              <p class="text-sm text-slate-500">Oct 2022 – Jan 2024</p>
+            </header>
+            <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+              <li>Developed test cases and contributed to comprehensive test plans across core product modules.</li>
+              <li>Modified and executed automation scripts; performed cross‑browser testing in virtualized environments.</li>
+              <li>Owned testing for Sales Management features: Promotions, Coupons, Discounts, Reports, Commissions/Bonuses, Payroll.</li>
+              <li>Delivered weekly quality reports highlighting defects, trends, and release readiness.</li>
+            </ul>
+          </article>
+
+          <article class="mb-8">
+            <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-base sm:text-lg font-semibold">SQA Associate — Appicoders Inc</h3>
+              <p class="text-sm text-slate-500">Jan 2021 – Sep 2022</p>
+            </header>
+            <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+              <li>Defined, executed, and analyzed test cases with the team to validate acceptance criteria.</li>
+              <li>Tracked defects using client systems; verified fixes and maintained traceability.</li>
+              <li>Configured test environments and data for reliable, repeatable test execution.</li>
+            </ul>
+          </article>
+
+          <article>
+            <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-base sm:text-lg font-semibold">SQA Intern — Softverse</h3>
+              <p class="text-sm text-slate-500">Sep 2021 – Jan 2022</p>
+            </header>
+            <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+              <li>Participated in test strategy, estimation, and planning based on business requirements.</li>
+              <li>Produced test status reports including results and defect metrics.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Projects / Highlights -->
+        <section class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4">Highlights</h2>
+          <ul class="list-disc pl-5 space-y-2 text-sm">
+            <li>Built API simulators & mocking utilities that reduced external dependency time during SIT.</li>
+            <li>Experience across mobile (Appium) and web (Selenium) automation with Python.</li>
+            <li>Comfortable collaborating with cross‑functional stakeholders in on‑site client settings.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-4 pb-12 text-center text-xs text-slate-500">
+    © <span id="year"></span> Muhammad Khuzaima Hanfi · Built with TailwindCSS · Print‑friendly · Dark mode
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
